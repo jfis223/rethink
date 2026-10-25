@@ -4,6 +4,7 @@ import H11 from './devices/H11'
 import N17 from './devices/N17'
 import D30 from './devices/D30'
 import WTWN3 from './devices/WTWN3'
+import WTHT3 from './devices/WTHT3'
 import RAC_056905_WW from './devices/RAC_056905_WW'
 import RAC_056905_WW_T1 from './devices/RAC_056905_WW_T1'
 import WIN_056905_WW from './devices/WIN_056905_WW'
@@ -60,6 +61,7 @@ const t1deviceTypes: Record<string, T1Factory> = {
     WTDN3,
     RAC_056905_WW: RAC_056905_WW_T1, // QCA4002 module, 2.6.7_RTOS_3K firmware: same model id as the TLV variant, but registers over ThinQ1 (issue #70)
     WTWN3, // LG F4J7TN1W front-load washer (ThinQ1, QCA4002 module)
+    WTHT3, // LG F4J8FH2W front-load washer-dryer (ThinQ1, QCA4002 module)
 }
 
 const t2deviceTypes: Record<string, T2Factory> = {
